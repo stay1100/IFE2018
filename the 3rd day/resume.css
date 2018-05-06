@@ -1,0 +1,24 @@
+body{
+    font:15px sans-serif;
+    color:#00796b;
+}
+header{
+    text-align:center;
+}
+.container header h1{
+    text-shadow:2px 2px 5px;
+}
+.picture img{
+    font-size:12px;
+    font-style:italic;
+}
+.blog{
+    font-family:serif;
+}
+.picture p{
+    font-size:20px;
+    font-weight:bold;
+}
+.declaration{
+    font-family:cursive;
+}
