@@ -1,0 +1,33 @@
+body,div,ul,h1,h3,h4 {
+	padding: 0;
+	margin: 0;
+}
+.basicinfo h2 {
+	margin-top: 0;
+	padding-top: 10px;
+}
+ul {
+	list-style: none;
+}
+.info_list {
+	overflow: hidden;
+}
+.info_list li {
+	float: left;
+	margin-right: 30px;
+}
+h4 + p {
+	margin-top: 0;
+}
+header {
+	float: left;
+	width: 200px;
+	height: 700px;
+	text-align: center;
+	line-height:200px;
+	color: #fff;
+	background-color: #2292DD;
+}
+.container {
+	margin-left: 220px;
+}
