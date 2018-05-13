@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<style>
+	/*float方法*/
+/*	aside {
+		float: left;
+		width: 30%;
+		background-color: #CC0;
+	}
+	.content {
+		float: right;
+		width: 70%;
+		background-color: #FF0;
+	}*/
+	/*position定位方法*/
+/*	aside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		background-color: #CC0;
+	}
+	.content {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		background-color: #FF0;
+	}*/
+	/*flex方法*/
+	body {
+		display: flex;
+
+	}
+	aside {
+		width: 30%;
+		order: 1;
+		background-color: #CC0;
+	}
+	.content {
+		order: 2;
+		width: 70%;
+		background-color: #FF0;
+	}
+</style>
+</head>
+<body>
+    <div class="content">我是主内容</div>
+    <aside>我是边栏</aside>
+</body>
+</html>

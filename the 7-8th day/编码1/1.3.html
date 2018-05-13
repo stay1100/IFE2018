@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<style>
+	/*float方法*/
+/*	body {
+		padding-right: 600px;
+	}
+	aside {
+		float: left;
+		width: 100%;
+		background-color: #CC0;
+	}
+	.content {
+		float: left;
+		width: 600px;
+		margin-right: -600px;
+		background-color: #FF0;
+	}*/
+	/*position定位方法*/
+/*	aside {
+		margin-right: 600px;
+		background-color: #CC0;
+	}
+	.content {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 600px;
+		background-color: #FF0;
+	}*/
+	/*flex方法*/
+	body {
+		display: flex;
+
+	}
+	aside {
+		flex: 1;
+		order: 1;
+		background-color: #CC0;
+	}
+	.content {
+		flex-shrink: 0;
+		order: 2;
+		width: 600px;
+		background-color: #FF0;
+	}
+</style>
+</head>
+<body>
+	<aside>我是边栏Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quibusdam dolorem sapiente porro id architecto ad quas, nostrum veniam quam asperiores dignissimos nemo, similique facere vitae rem quidem blanditiis laudantium.</aside>
+    <div class="content">我是主内容Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus reiciendis, fugit totam doloremque ut, ipsa vel id voluptatibus quaerat facere quo, fugiat, perferendis incidunt iusto laboriosam ea doloribus! Quaerat.</div>
+</body>
+</html>
