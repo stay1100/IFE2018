@@ -240,13 +240,13 @@ h3 {
 }
 .crew-info-show {
 	visibility: hidden;
-	text-align: center;
 	padding: 100px 0;
 	box-sizing: border-box;
 	position: absolute;
 	top: 0;
 	left: 0;
 	margin-top: 30px;
+	text-align: center;
 	width: 470px;
 	height: 340px;
 	color: #fff;
@@ -256,11 +256,25 @@ h3 {
 	font-size: 14px;
 	opacity: .5;
 }
-.crew-info-show img {
+.crew-info-show div {
+	display: inline-block;
 	margin: 40px 15px;
+	border:1px solid rgba(255,255,255,0.2);
+	border-radius: 50% 50% 50% 50%;
+	transition: background-color 0.5s;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0);
+}
+.crew-info-show img {
+	margin-top: 15px;
 }
 .crew-show:hover .crew-info-show {
 	visibility: visible;
+}
+.crew-info-show div:hover {
+	background-color: rgba(255,255,255,.5);
 }
 .contacts {
 	position: relative;
