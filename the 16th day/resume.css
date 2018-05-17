@@ -1,0 +1,54 @@
+body{
+    font:15px sans-serif;
+    color:#00796b;
+    background-color:#e0e0e0;
+}
+header{
+    text-align:center;
+}
+a{
+    color:#f0f2f1;
+    text-decoration:none;
+}
+a:active{
+    color:red;
+}
+.main{
+    background-color:#f0f2f1;
+}
+.container header h1{
+    text-shadow:2px 2px 5px;
+}
+.container section .title{
+    border-bottom:1px solid #00796b;
+}
+#hi-info {
+    display: none;
+}
+.skill ul{
+    list-style-type:circle;
+}
+aside{
+    background-color: #00bfa5;
+}
+.picture img{
+    font-size:12px;
+    font-style:italic;
+}
+.blog{
+    font-family:serif;
+}
+.picture p{
+    color:#f0f2f1;
+    font-size:20px;
+    font-weight:bold;
+}
+.declaration{
+    border-top:1px solid #00796b;
+    border-bottom:1px solid #00796b;
+    font-family:cursive;
+}
+.skillChart{
+    color:#f0f2f1;
+    font-weight:bold;
+}
