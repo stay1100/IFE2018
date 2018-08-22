@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script>
+    function dec2bin(decNumber, binBit) {
+        // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+        if (!isNaN(decNumber) && decNumber >= 0 && decNumber % 1 === 0) {
+            // 声明一个空数组接收每次计算的余数
+            const temArr = []
+            let remainder
+            for (let i = decNumber; i !== 0; i = Math.floor(i / 2)) {
+                // 计算余数
+                remainder = i % 2
+                // 将每次计算的余数推入空数组
+                temArr.unshift(remainder)
+            }
+            // 判断是否需要补0
+            if (temArr.length < binBit) {
+                let temFill = binBit - temArr.length
+                for (let i = 0; i < temFill; i++) {
+                    temArr.unshift(0)
+                }
+            } else {
+                console.log("error")
+            }
+            // 数组转化为字符串
+            return temArr.join("")
+        } else {
+            alert("请输入正确的数值")
+        }
+    }
+
+    let transBtn = document.getElementById('trans-btn')
+    let result = document.getElementById('result')
+    transBtn.addEventListener('click',() => {
+        let decNumber = document.getElementById('dec-number').value
+        let binBit = document.getElementById('bin-bit').value
+        let resultNum = dec2bin(decNumber, binBit)
+        result.innerHTML = `运算结果: ${resultNum}`
+    },false)
+    </script>
+</body>
+</html>
