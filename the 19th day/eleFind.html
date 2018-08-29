@@ -36,7 +36,7 @@
     <script>
     // 返回页面中所有li标签
     function getAllListItem() {
-        return = document.getElementsByTagName('li')
+        return document.getElementsByTagName('li')
     }
     // 返回某个section下所有span中内容为HTML的span标签
     function findAllHtmlSpanInOneSection(sectionId) {
@@ -51,6 +51,16 @@
         return spanArr.filter(elem => elem !== undefined)
     }
 
+    // 第二种解法：
+    function findAllHtmlSpanInOneSection2(sectionId) {
+        let section = document.getElementById(sectionId)
+        let spanArr = [...section.getElementsByTagName('span')]
+        return spanArr.filter(span => {
+            if(span.textContent === "HTML") {
+                return true;
+            }
+        })
+    }
     // 返回某个section下，所有所包含span内容为spanCont的LI标签
     function findListItem(sectionId, spanCont) {
         let section = document.getElementById(sectionId)
@@ -75,22 +85,6 @@
         // 将函数执行结果返回
         return activeLinksArr
     }
-    </script>
-
-    <!-- 使用querySelector及querySelectorAll -->
-    <script>
-    // 返回页面中所有li标签
-    function getAllListItem() {
-        return document.querySelectorAll('li')
-    }
-
-    // 返回某个section下所有span中内容为HTML的span标签
-    function findAllHtmlSpanInOneSection(sectionId) {
-        let section = document.querySelector(sectionId)
-        let span = section.querySelectorAll("span")
-    }
-    // let i = findAllHtmlSpanInOneSection("#news-normal")
-    // console.log(i)
     </script>
 </body>
 </html>
